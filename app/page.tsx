@@ -11,6 +11,9 @@ export default function Home() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ key, value }),
     });
+
+    setKey("");
+    setValue("");
   }
 
   async function getData() {
